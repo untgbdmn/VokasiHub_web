@@ -1,7 +1,18 @@
+import { ThemeProvider } from "./components/theme-provider";
+import { Layouts } from "./layouts/layouts";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/dashboard";
+
 export default function App() {
     return (
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+        <BrowserRouter>
+            <ThemeProvider defaultTheme="dark">
+                <Layouts>
+                    <Routes>
+                        <Route path="/" element={<Dashboard />} />
+                    </Routes>
+                </Layouts>
+            </ThemeProvider>
+        </BrowserRouter>
     )
-  }
+}
