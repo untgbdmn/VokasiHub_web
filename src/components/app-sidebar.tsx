@@ -47,7 +47,7 @@ const data = {
             title: "Playground",
             url: "#",
             icon: SquareTerminal,
-            isActive: true,
+            isActive: false,
             items: [
                 {
                     title: "History",
@@ -81,7 +81,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             </SidebarHeader>
             <SidebarContent>
                 <NavbarItem href="/dashboard" icon={LayoutDashboard}>Dashboard</NavbarItem>
-                <NavMain items={data.navMain} />
+                <NavMain items={data.navMain}/>
                 <NavProjects projects={data.projects} />
             </SidebarContent>
             <SidebarRail />

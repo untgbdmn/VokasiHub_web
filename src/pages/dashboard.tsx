@@ -1,7 +1,12 @@
+import { BannerHead } from "../layouts/layouts";
+
 export default function Dashboard() {
   return (
-    <div>
-        adaada
-    </div>
+    <>
+        <BannerHead>Dashboard</BannerHead>
+        <div className="">
+            
+        </div>
+    </>
   )
 }
